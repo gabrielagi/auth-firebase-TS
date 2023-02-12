@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import MainContainer from './components/containers/MainContainer';
 import SmallText from './components/Texts/SmallText';
+import RegularText from './components/Texts/RegularText';
+import BigText from './components/Texts/BigText';
 
 export default function App() {
   return (
@@ -10,14 +12,11 @@ export default function App() {
     //   <Text>Hola Ale!</Text>
     //   <StatusBar style='auto'/>
     // </MainContainer>
-    <SmallText>
-      <MainContainer>
-      <Text>Hola Ale!</Text>
-      <StatusBar style='auto'/> 
-      </MainContainer>
-      <Text>Hola Ale!</Text>
-      <StatusBar style='auto'/>
-    </SmallText>
+    <MainContainer>
+      <SmallText>Soy small text</SmallText>
+      <RegularText>Soy regular text</RegularText>
+      <BigText>Soy big text</BigText>
+    </MainContainer>
   );
 }
 

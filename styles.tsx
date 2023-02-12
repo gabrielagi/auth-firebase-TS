@@ -40,4 +40,11 @@ export const RegularTextStyled = styled.Text`
     text-align: left;
     color: ${colors.black};
 `;
+export const BigTextStyled = styled.Text`
+    font-size: 28px;
+    padding-top: 40px;
+    text-align: left;
+    color: ${colors.black};
+`;
+
 
