@@ -20,13 +20,24 @@ export const Container = styled.SafeAreaView`
     padding: 20px;
     padding-top: ${Constants.statusBarHeight + 'px'};
 `;
-export const StyledView = styled.View`
+export const MainContainerStyled = styled.View`
     flex: 1;
     padding: 25px;
     padding-top: 40px;
     background-color: ${colors.primary};
+    align-items: center;
+    justify-content: center;
 `;
-export const ThemeButtonText = styled.Text`
+export const SmallTextStyled = styled.Text`
     font-size: 16px;
-    color: ${colors.BUTTON_COLOR}
+    padding-top: 40px;
+    text-align: left;
+    color: ${colors.black};
 `;
+export const RegularTextStyled = styled.Text`
+    font-size: 22px;
+    padding-top: 40px;
+    text-align: left;
+    color: ${colors.black};
+`;
+
