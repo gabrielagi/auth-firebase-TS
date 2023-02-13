@@ -1,13 +1,16 @@
-import React from 'react';
-import { InputWapper, LeftIcon } from '../../styles';
+import React, { FunctionComponent } from 'react';
+import { InputWapper, LeftIcon, colors, SmallTextStyled, InputField } from '../../styles';
 import { InputProps } from '../../types'
-  
-  const TextInput = (props: InputProps) => {
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+  const TextInput: FunctionComponent<InputProps> = ({icon, label, ...props}) => {
     return <InputWapper>
     <LeftIcon>
-        
+      <MaterialCommunityIcons name={icon} size={30} color={colors.gray}/>
     </LeftIcon>
-    {props.children}</InputWapper>;
+    <SmallTextStyled>{label}</SmallTextStyled>
+    <InputField {...props} placeholderTextColor={colors.gray}/>
+    </InputWapper>;
   };
 
 

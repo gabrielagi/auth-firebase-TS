@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
 
 import MainContainer from './components/containers/MainContainer';
 import SmallText from './components/Texts/SmallText';
@@ -8,11 +8,22 @@ import BigText from './components/Texts/BigText';
 import TextInput from './components/Inputs/TextInput';
 
 export default function App() {
+const [email, setEmail] = useState("");
+  
   return (
     <MainContainer>
-      <SmallText>Soy small text</SmallText>
-      <RegularText>Soy regular text</RegularText>
-      <BigText>Soy big text</BigText>
+      <SmallText style={{marginBottom: 20}}>Soy small text</SmallText>
+      <StatusBar style="auto" />
+      <TextInput
+      label="Email Addres"
+      icon="email-variant"
+      value={email}
+      onChangeText={setEmail}
+      placeholder="youremail@gmail.com"
+      keyboardType="email-address"
+      style={{marginBottom: 20}}
+      >
+      </TextInput>
     </MainContainer>
   );
 }

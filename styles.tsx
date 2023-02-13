@@ -9,7 +9,7 @@ export const colors = {
     secondary: "#A7F3D0",
     black: "0F172A",
     gray: "#64748B",
-    BUTTON_COLOR: '#111216',
+    accent: '#0475857',
 }
 
 export const MainContainerStyled = styled.View`
@@ -54,10 +54,24 @@ export const InputWapper = styled.View`
 `;
 export const LeftIcon = styled.View`
     position: absolute;
-    top: 35px;
+    top: 80px;
     left: 15px;
     z-index: 1;
     border-right-width: 2px;
     border-color: ${colors.secondary};
     padding-right: 10px;
+`;
+export const InputField = styled.TextInput`
+    background-color: ${colors.black};
+    height: 60px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: ${colors.secondary};
+    margin-vertical: 3px;
+    margin-bottom: 10px;
+    padding: 15px;
+    padding-left: 65px;
+    padding-right: 55px;
+    font-size: 16px;
+    color: ${colors.black};
 `;
