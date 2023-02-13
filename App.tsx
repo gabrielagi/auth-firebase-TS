@@ -24,6 +24,16 @@ const [email, setEmail] = useState("");
       style={{marginBottom: 20}}
       >
       </TextInput>
+      {/* <TextInput
+      label="Profile"
+      icon="account"
+      value={email}
+      onChangeText={setEmail}
+      placeholder="youremail@gmail.com"
+      keyboardType="email-address"
+      style={{marginBottom: 20}}
+      >
+      </TextInput> */}
     </MainContainer>
   );
 }
