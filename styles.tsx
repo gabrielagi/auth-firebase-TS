@@ -12,14 +12,6 @@ export const colors = {
     BUTTON_COLOR: '#111216',
 }
 
-export const Container = styled.SafeAreaView`
-    background-color: ${colors.primary};
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    padding-top: ${Constants.statusBarHeight + 'px'};
-`;
 export const MainContainerStyled = styled.View`
     flex: 1;
     padding: 25px;
@@ -28,6 +20,9 @@ export const MainContainerStyled = styled.View`
     align-items: center;
     justify-content: center;
 `;
+
+
+// Text components
 export const SmallTextStyled = styled.Text`
     font-size: 16px;
     padding-top: 40px;
@@ -41,10 +36,28 @@ export const RegularTextStyled = styled.Text`
     color: ${colors.black};
 `;
 export const BigTextStyled = styled.Text`
-    font-size: 28px;
+    font-size: 42px;
     padding-top: 40px;
     text-align: left;
     color: ${colors.black};
 `;
 
-
+// Input components
+export const TexInputStyled = styled.Text`
+    font-size: 42px;
+    padding-top: 40px;
+    text-align: left;
+    color: ${colors.black};
+`;
+export const InputWapper = styled.View`
+    width: 100%;
+`;
+export const LeftIcon = styled.View`
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    z-index: 1;
+    border-right-width: 2px;
+    border-color: ${colors.secondary};
+    padding-right: 10px;
+`;

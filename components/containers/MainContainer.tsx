@@ -1,5 +1,5 @@
 import { MainContainerStyled } from '../../styles';
-import { ContainerProps } from '../containers/types'
+import { ContainerProps } from '../../types'
   
   const MainContainer = (props: ContainerProps) => {
     return <MainContainerStyled>{props.children}</MainContainerStyled>;

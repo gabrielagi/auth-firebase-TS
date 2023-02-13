@@ -1,6 +1,6 @@
 import React from 'react';
 import { SmallTextStyled } from '../../styles';
-import { TextProps } from '../containers/types'
+import { TextProps } from '../../types'
   
   const SmallText = (props: TextProps) => {
     return <SmallTextStyled>{props.children}</SmallTextStyled>;
