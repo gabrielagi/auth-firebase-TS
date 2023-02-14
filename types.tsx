@@ -18,6 +18,7 @@ export type TextProps = {
   interface InterfaceInputProps {
     label: ReactNode;
     icon: ComponentProps<typeof MaterialCommunityIcons>['name'];
+    isPassword?: Boolean;
 }
 
 export type InputProps = TextInputProps & InterfaceInputProps;

@@ -28,13 +28,6 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
       onFocus={customOnFocus}
       onBlur={customOnBlur}
       />
-      <InputField 
-      {...props} 
-      placeholderTextColor={colors.gray} 
-      style={[{backgroundColor: inputBackground}, props.style]}
-      onFocus={customOnFocus}
-      onBlur={customOnBlur}
-      />
     </InputWapper>;
   };
 

@@ -15,7 +15,6 @@ export const colors = {
 export const MainContainerStyled = styled.View`
     flex: 1;
     padding: 25px;
-    padding-top: 40px;
     background-color: ${colors.primary};
     align-items: center;
     justify-content: center;
@@ -54,7 +53,7 @@ export const InputWapper = styled.View`
 `;
 export const LeftIcon = styled.View`
     position: absolute;
-    top: 80px;
+    top: 35px;
     left: 15px;
     z-index: 1;
     border-right-width: 2px;
